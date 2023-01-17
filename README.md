@@ -6,5 +6,5 @@
 
 ## Introduction
 This pipeline is written specifically for the analysis of data originating from our Oxford Nanopore Technologies-based mRNA sequencing protocol. It is tuned towards a faithful quantification of different isoforms (including novel ones). The pipeline uses a Docker image which is pulled from Docker Hub, when run with the ```docker``` profile. A general overview of the pipeline is visualized in the following flowchart: 
-![flowchart](https://github.com/OncoRNALab/plasmaONT/blob/flowchart.png/?raw=true)
+![flowchart](https://github.com/OncoRNALab/plasmaONT/blob/main/flowchart.png/?)
 
