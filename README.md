@@ -5,3 +5,4 @@
 [![Follow on Twitter](http://img.shields.io/badge/twitter-%40JVerwilt-1DA1F2?labelColor=000000&logo=twitter)](https://twitter.com/JVerwilt)
 
 ## Introduction
+This pipeline is written specifically for the analysis of data originating from our Oxford Nanopore Technologies-based mRNA sequencing protocol. It is tuned towards a faithful quantification of different isoforms (including novel ones). The pipeline uses a Docker image which is pulled from Docker Hub, when run with the """docker""" profile.
