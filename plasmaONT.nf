@@ -186,7 +186,8 @@ process STRINGTIE2 {
 	tuple sample_id, path(filtered_reads) from genome_filtered_fl_a_ch
 	
 	output:
-	tuple sample_id, "${sample_id}_stringtie.gtf" into stringtie_gtf_ch
+	tuple sample_id, "${sample_id}_stringtie.gtf"
+
 
 	script:
 	"""
@@ -204,8 +205,7 @@ process ISOQUANT {
 
 	output:
 	path "*"
-	path "*/*extended_annotation.gtf" into isoquant_gtf_ch
-
+	
 	script:
 	"""
 	samtools index $filtered_reads
@@ -219,27 +219,18 @@ process HTSEQ {
     publishDir "$params.outdir/${sample_id}/08_htseq_out", mode:'copy'
 
     input:
-		tuple sample_id, path(filtered_reads) from genome_filtered_ch
-		tuple sample_id, path(stringtie_gtf) from stringtie_gtf_ch
-		path(isoquant_gtf) from isoquant_gtf_ch
-		
+		tuple sample_id, path(filtered_reads) from genome_filtered_ch	
 		
     output:
         path "${sample_id}_counts.txt" into counts_ch
 		path "${sample_id}_annotated.sam" 
-		path "${sample_id}_annotated_stringtie.sam" 
-		path "${sample_id}_counts_stringtie.txt"
-		path "${sample_id}_annotated_isoquant.sam" 
-		path "${sample_id}_counts_isoquant.txt"
 
 	script:
 	"""
 	samtools sort -n $filtered_reads -o sorted_bam
-	samtools view -h sorted_bam > sorted_sam
+	samtools view -h sorted_bam | awk 'length(\$10) > 1 || \$1 ~ /^@/' > sorted_sam
 	htseq-count --format sam --order name --mode union --stranded no --nonunique none -o ${sample_id}_annotated.sam sorted_sam $params.junctionsGTF_hg38 > ${sample_id}_counts.txt
-	htseq-count --format sam --order name --mode union --stranded no --nonunique none -o ${sample_id}_annotated_stringtie.sam sorted_sam $stringtie_gtf > ${sample_id}_counts_stringtie.txt
-	htseq-count --format sam --order name --mode union --stranded no --nonunique none -o ${sample_id}_annotated_isoquant.sam sorted_sam $isoquant_gtf > ${sample_id}_counts_isoquant.txt
-	"""
+"""
 }
 
 
