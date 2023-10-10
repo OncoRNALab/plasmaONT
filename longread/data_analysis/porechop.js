@@ -4,9 +4,9 @@
 #PBS -l walltime=24:00:00
 #PBS -l mem=180gb
 
-input_reads_sam="/scratch/gent/vo/000/gvo00027/projects/HVD/Anchoring/fastq"
-out_DIR="/scratch/gent/vo/000/gvo00027/projects/HVD/Anchoring/fastq"
-work_DIR=""
+input_reads_sam="your_basecalled_sam_reads"
+out_DIR="dir_where_fastqs_should_go"
+work_DIR="dir_where_you_want_logfiles"
 sample="sample"
 
 cd $work_DIR
