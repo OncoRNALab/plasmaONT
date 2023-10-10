@@ -6,7 +6,7 @@
 #PBS -m abe
 
 orig_DIR="dir_where_pod5_are"
-out_DIR="dir_where_fastq_should_go"
+out_DIR="dir_where_sam_should_go"
 work_DIR="dir_where_you_want_logfiles"
 config="dna_r10.4.1_e8.2_400bps_sup@v4.2.0"
 sample="sample"
