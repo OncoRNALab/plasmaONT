@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunParameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlannedCycles>
+    <Read1>51</Read1>
+    <Index1>8</Index1>
+    <Index2>8</Index2>
+    <Read2>51</Read2>
+  </PlannedCycles>
+  <CompletedCycles>
+    <Read1>51</Read1>
+    <Index1>8</Index1>
+    <Index2>8</Index2>
+    <Read2>51</Read2>
+  </CompletedCycles>
+  <InstrumentName>Agnetha</InstrumentName>
+  <InstrumentSerialNumber>VH00559</InstrumentSerialNumber>
+  <InstrumentType>NextSeq 2000</InstrumentType>
+  <ApplicationName>NextSeq 1000/2000 Control Software</ApplicationName>
+  <ApplicationVersion>1.5.0.42699</ApplicationVersion>
+  <FlowCellSerialNumber>AACWN2GM5</FlowCellSerialNumber>
+  <FlowCellPartNumber>20027770</FlowCellPartNumber>
+  <FlowCellLotNumber>20771190</FlowCellLotNumber>
+  <FlowCellExpirationDate>2024-06-12</FlowCellExpirationDate>
+  <FlowCellVersion>2</FlowCellVersion>
+  <FlowCellMode>NextSeq 1000/2000 P2 Flow Cell Cartridge</FlowCellMode>
+  <CartridgeSerialNumber>EC1397375-EC11</CartridgeSerialNumber>
+  <CartridgePartNumber>20044468</CartridgePartNumber>
+  <CartridgeLotNumber>20761166</CartridgeLotNumber>
+  <CartridgeExpirationDate>2024-08-07</CartridgeExpirationDate>
+  <CartridgeVersion>3</CartridgeVersion>
+  <CartridgeMode>NextSeq 1000/2000 P2 Reagent Cartridge (138 Cycles)</CartridgeMode>
+  <ExperimentName>NSQ2K_098</ExperimentName>
+  <RecipeName>MO-Seq</RecipeName>
+  <RecipeVersion>2.0</RecipeVersion>
+  <RtaVersion>3.10.30</RtaVersion>
+  <RunStartTime>2023-09-07T14:06:50.5165938Z</RunStartTime>
+  <RunEndTime>2023-09-08T06:00:02.639964Z</RunEndTime>
+  <RunElapsedTime>0:15:53:12:123 (d:hr:min:s:ms)</RunElapsedTime>
+  <RunCounter>98</RunCounter>
+  <CimVersion>cim@1.4.4</CimVersion>
+  <ChmVersion>chm@1.4.4</ChmVersion>
+  <ImbVersion>imb@1.4.4</ImbVersion>
+  <CibFpgaVersion>0x3200000a</CibFpgaVersion>
+  <CopyServiceRunId>1A8DA986E810B91F</CopyServiceRunId>
+  <CopyServiceVersion>2.7.3.4836</CopyServiceVersion>
+  <BaseSpaceRunId>15079070</BaseSpaceRunId>
+  <BsshMode>RunMonitoringOnly</BsshMode>
+  <RunSetupMode>Manual</RunSetupMode>
+  <SecondaryAnalysisMode>None</SecondaryAnalysisMode>
+  <OutputFolder>/mnt/cmgg_upload/NextSeq2000_VH00559/230907_VH00559_98_AACWN2GM5</OutputFolder>
+  <SkipObdd>false</SkipObdd>
+  <PurgeReagentCartridge>true</PurgeReagentCartridge>
+  <CustomPrimerSelections>
+    <Read1>None</Read1>
+    <Index1>None</Index1>
+    <Index2>None</Index2>
+    <Read2>None</Read2>
+  </CustomPrimerSelections>
+</RunParameters>
